@@ -1,7 +1,7 @@
 <?php
 
 $params = require __DIR__ . '/params.php';
-$db = require __DIR__ . '/db.php';
+$db = file_exists(__DIR__ . '/db_local.php') ? (require __DIR__ . '/db_local.php') : (require __DIR__ . '/db.php');
 
 $config = [
     'id' => 'basic-console',
@@ -28,13 +28,23 @@ $config = [
         'db' => $db,
     ],
     'params' => $params,
-    /*
+
     'controllerMap' => [
-        'fixture' => [ // Fixture generation command line.
-            'class' => 'yii\faker\FixtureController',
+        'migrate-auth' => [
+            'class' => 'yii\console\controllers\MigrateController',
+            'migrationNamespaces' => ['app\modules\auth\migrations'],
+            'migrationTable' => 'migration_auth'
         ],
+        'migrate-rbac' => [
+            'class' => 'yii\console\controllers\MigrateController',
+            'migrationPath' => '@yii/rbac/migrations',
+            'migrationTable' => 'migration_rbac',
+        ],
+       /* 'fixture' => [ // Fixture generation command line.
+            'class' => 'yii\faker\FixtureController',
+        ],*/
     ],
-    */
+
 ];
 
 if (YII_ENV_DEV) {

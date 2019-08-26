@@ -4,7 +4,7 @@ $params = require __DIR__ . '/params.php';
 $db = file_exists(__DIR__ . '/db_local.php') ? (require __DIR__ . '/db_local.php') : (require __DIR__ . '/db.php');
 
 $config = [
-    'id' => 'basic',
+    'id' => 'mywebdev',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'language' => 'ru-RU',
