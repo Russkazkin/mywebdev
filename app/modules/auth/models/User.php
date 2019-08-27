@@ -14,6 +14,15 @@ use yii\web\IdentityInterface;
 class User extends BaseUser implements IdentityInterface
 {
 
+    public $password;
+
+    public function rules()
+    {
+        return array_merge(parent::rules(), [
+            ['password', 'string', 'min' => 6]
+        ]);
+    }
+
     /**
      * Finds an identity by the given ID.
      * @param string|int $id the ID to be looked for

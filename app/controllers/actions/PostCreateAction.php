@@ -10,6 +10,6 @@ class PostCreateAction extends BaseAction
 {
     public function run()
     {
-        return $this->controller->render('create');
+        return $this->controller->render('sign-up');
     }
 }
