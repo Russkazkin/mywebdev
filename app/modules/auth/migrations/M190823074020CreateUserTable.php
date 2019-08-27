@@ -4,9 +4,7 @@ namespace app\modules\auth\migrations;
 
 use yii\db\Migration;
 
-/**
- * Handles the creation of table `{{%user}}`.
- */
+
 class M190823074020CreateUserTable extends Migration
 {
     /**
