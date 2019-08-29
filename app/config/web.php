@@ -7,7 +7,7 @@ $config = [
     'id' => 'mywebdev',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
-    'language' => 'ru-RU',
+    'language' => 'en-EN',
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
@@ -26,8 +26,8 @@ $config = [
             'class' => 'yii\caching\FileCache',
         ],
         'user' => [
-            //'identityClass' => 'app\modules\auth\models\User',
-            'identityClass' => 'app\models\User',
+            'identityClass' => 'app\modules\auth\models\User',
+            //'identityClass' => 'app\models\User',
             'enableAutoLogin' => true,
         ],
         'errorHandler' => [
