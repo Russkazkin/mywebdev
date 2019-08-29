@@ -17,7 +17,6 @@ use Yii;
  * @property int $status
  * @property int $created_at
  * @property int $updated_at
- * @property int $isDeleted
  */
 class BaseUser extends \yii\db\ActiveRecord
 {
@@ -36,7 +35,7 @@ class BaseUser extends \yii\db\ActiveRecord
     {
         return [
             [['username', 'name', 'authKey', 'password_hash', 'email'], 'required'],
-            [['status', 'created_at', 'updated_at', 'isDeleted'], 'integer'],
+            [['status', 'created_at', 'updated_at'], 'integer'],
             [['username', 'name'], 'string', 'max' => 48],
             [['authKey'], 'string', 'max' => 32],
             [['password_hash', 'password_reset_token', 'email'], 'string', 'max' => 255],
@@ -62,7 +61,6 @@ class BaseUser extends \yii\db\ActiveRecord
             'status' => Yii::t('app', 'Status'),
             'created_at' => Yii::t('app', 'Created At'),
             'updated_at' => Yii::t('app', 'Updated At'),
-            'isDeleted' => Yii::t('app', 'Is Deleted'),
         ];
     }
 }

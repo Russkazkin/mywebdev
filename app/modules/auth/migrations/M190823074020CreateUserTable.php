@@ -23,7 +23,6 @@ class M190823074020CreateUserTable extends Migration
             'status' => $this->smallInteger()->notNull()->defaultValue(10),
             'created_at' => $this->integer(11),
             'updated_at' => $this->integer(11),
-            'isDeleted' => $this->boolean()->notNull()->defaultValue(0),
         ]);
     }
 
