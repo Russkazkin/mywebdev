@@ -7,7 +7,8 @@ $config = [
     'id' => 'mywebdev',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
-    'language' => 'en-EN',
+    'language' => 'ru-RU',
+    'sourceLanguage' => 'en-US',
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
@@ -48,6 +49,9 @@ $config = [
                     'levels' => ['error', 'warning'],
                 ],
             ],
+        ],
+        'i18n' => [
+
         ],
         'db' => $db,
         'urlManager' => [
