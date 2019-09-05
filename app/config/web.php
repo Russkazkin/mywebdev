@@ -58,7 +58,8 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                'auth/<action>' => 'auth/auth/<action>'
+                'auth/<action>' => 'auth/auth/<action>',
+                'user/<action>' => 'auth/user/<action>',
             ],
         ],
     ],
