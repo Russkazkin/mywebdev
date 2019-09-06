@@ -1,5 +1,7 @@
 <?php
 
+use yii\i18n\PhpMessageSource;
+
 $params = require __DIR__ . '/params.php';
 $db = file_exists(__DIR__ . '/db_local.php') ? (require __DIR__ . '/db_local.php') : (require __DIR__ . '/db.php');
 
@@ -51,7 +53,14 @@ $config = [
             ],
         ],
         'i18n' => [
-
+            'translations' => [
+                'auth*' => [
+                    'class' => PhpMessageSource::class,
+                    'fileMap' => [
+                        'auth' => '/modules/auth/messages'
+                    ]
+                ]
+            ]
         ],
         'db' => $db,
         'urlManager' => [

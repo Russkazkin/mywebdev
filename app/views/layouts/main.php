@@ -60,6 +60,13 @@ GlyphiconAsset::register($this);
         'options' => ['class' => 'navbar-nav mr-auto'],
         'items' => $menuItems
     ]);
+    echo Html::beginForm(['site/language'], 'post', [
+                'enctype' => 'multipart/form-data',
+                'id' => 'lang-form',
+     ]);
+    echo Html::dropDownList('language', Yii::$app->language, ['en-US' => 'English', 'ru-RU' => 'Русский']);
+    echo Html::submitButton('Change');
+    echo Html::endForm();
     NavBar::end();
     ?>
 
