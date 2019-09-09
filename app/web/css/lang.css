@@ -26,9 +26,12 @@
     cursor: pointer;
 }
 .lang-switch label.checked {
-    background-color: #09a7fe;
-    box-shadow: none;
-    color: rgba(255, 255, 255, 0.5);
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+.lang-switch label.checked:hover {
+    cursor: default;
 }
 
 .lang-switch label:first-child {
