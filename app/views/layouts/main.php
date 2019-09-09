@@ -1,6 +1,7 @@
 <?php
 
 /* @var $this \yii\web\View */
+
 /* @var $content string */
 
 use app\widgets\Alert;
@@ -38,18 +39,18 @@ GlyphiconAsset::register($this);
         ],
     ]);
     $menuItems = [
-        ['label' => 'Home', 'url' => ['/site/index']],
-        ['label' => 'About', 'url' => ['/site/about']],
-        ['label' => 'Contact', 'url' => ['/site/contact']],
+        ['label' => Yii::t('app', 'Home'), 'url' => ['/site/index']],
+        ['label' => Yii::t('app', 'About'), 'url' => ['/site/about']],
+        ['label' => Yii::t('app', 'Contact'), 'url' => ['/site/contact']],
     ];
     if (Yii::$app->user->isGuest) {
-        $menuItems[] = ['label' => 'Sign In', 'url' => ['/auth/sign-in']];
-        $menuItems[] = ['label' => 'Sign Up', 'url' => ['/auth/sign-up']];
+        $menuItems[] = ['label' => Yii::t('app', 'Sign In'), 'url' => ['/auth/sign-in']];
+        $menuItems[] = ['label' => Yii::t('app', 'Sign Up'), 'url' => ['/auth/sign-up']];
     } else {
         $menuItems[] = '<li>'
             . Html::beginForm(['/auth/logout'], 'post')
             . Html::submitButton(
-                'Logout (' . Yii::$app->user->identity->username . ')',
+                Yii::t('app', 'Logout (') . Yii::$app->user->identity->username . ')',
                 ['class' => 'btn btn-link logout']
             )
             . Html::endForm()
@@ -61,11 +62,16 @@ GlyphiconAsset::register($this);
         'items' => $menuItems
     ]);
     echo Html::beginForm(['/site/language'], 'post', [
-                'enctype' => 'multipart/form-data',
-                'id' => 'lang-form',
-     ]);
-    echo Html::dropDownList('language', Yii::$app->language, ['en-US' => 'English', 'ru-RU' => 'Русский']);
-    echo Html::submitButton('Change');
+        'enctype' => 'multipart/form-data',
+        'id' => 'lang-form',
+        'class' => 'lang-switch-form'
+    ]);
+    echo Html::radioList('language',
+        Yii::$app->language,
+        ['en-US' => 'ENG', 'ru-RU' => 'РУС'],
+        ['class' => 'lang-switch']);
+    //echo Html::dropDownList('language', Yii::$app->language, ['en-US' => 'English', 'ru-RU' => 'Русский']);
+    //echo Html::submitButton('Change');
     echo Html::endForm();
     NavBar::end();
     ?>

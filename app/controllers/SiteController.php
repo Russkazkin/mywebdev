@@ -153,9 +153,9 @@ class SiteController extends Controller
         ]);
         Yii::$app->response->cookies->add($calendarCookie);
 
-        if(Yii::$app->user->returnUrl != '/')
+        /*if(Yii::$app->user->returnUrl != '/')
             return $this->goBack();
         else return
-            Yii::$app->request->referrer ? $this->redirect(Yii::$app->request->referrer) : $this->goHome();
+            Yii::$app->request->referrer ? $this->redirect(Yii::$app->request->referrer) : $this->goHome();*/
     }
 }
