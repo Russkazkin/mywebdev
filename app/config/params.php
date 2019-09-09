@@ -12,7 +12,7 @@ return [
         ],
         'ru-RU' => [
             'locale' => 'ru_RU.UTF-8, ru_RU',
-            'calendar' => IntlDateFormatter::create('ru_RU', 1,1)
+            'calendar' => IntlDateFormatter::TRADITIONAL,
         ]
     ]
 ];

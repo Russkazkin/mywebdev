@@ -60,7 +60,7 @@ GlyphiconAsset::register($this);
         'options' => ['class' => 'navbar-nav mr-auto'],
         'items' => $menuItems
     ]);
-    echo Html::beginForm(['site/language'], 'post', [
+    echo Html::beginForm(['/site/language'], 'post', [
                 'enctype' => 'multipart/form-data',
                 'id' => 'lang-form',
      ]);

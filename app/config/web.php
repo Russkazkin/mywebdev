@@ -1,5 +1,6 @@
 <?php
 
+use app\components\LanguageSelector;
 use yii\i18n\PhpMessageSource;
 
 $params = require __DIR__ . '/params.php';
@@ -8,7 +9,13 @@ $db = file_exists(__DIR__ . '/db_local.php') ? (require __DIR__ . '/db_local.php
 $config = [
     'id' => 'mywebdev',
     'basePath' => dirname(__DIR__),
-    'bootstrap' => ['log'],
+    'bootstrap' => [
+        'log',
+        [
+            'class' => LanguageSelector::class,
+            'supportedLanguages' => ['en-US', 'ru-RU'],
+        ]
+    ],
     'language' => 'ru-RU',
     'sourceLanguage' => 'en-US',
     'aliases' => [

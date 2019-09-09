@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use http\Cookie;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
@@ -126,8 +127,35 @@ class SiteController extends Controller
         return $this->render('about');
     }
 
-    public function actionDebug()
+    public function actionLanguage()
     {
-        return $this->render('debug');
+        $language = Yii::$app->request->post('language');
+        Yii::$app->language = $language;
+
+        $languageCookie = new \yii\web\Cookie([
+            'name' => 'language',
+            'value' => $language,
+            'expire' => time() + 3600 * 24 * 30,
+        ]);
+        Yii::$app->response->cookies->add($languageCookie);
+
+        $localeCookie = new \yii\web\Cookie([
+            'name' => 'locale',
+            'value' => Yii::$app->params['formattedLanguages'][$language]['locale'],
+            'expire' => time() + 3600 * 24 * 30,
+        ]);
+        Yii::$app->response->cookies->add($localeCookie);
+
+        $calendarCookie = new \yii\web\Cookie([
+            'name' => 'calendar',
+            'value' => Yii::$app->params['formattedLanguages'][$language]['calendar'],
+            'expire' => time() + 3600 * 24 * 30,
+        ]);
+        Yii::$app->response->cookies->add($calendarCookie);
+
+        if(Yii::$app->user->returnUrl != '/')
+            return $this->goBack();
+        else return
+            Yii::$app->request->referrer ? $this->redirect(Yii::$app->request->referrer) : $this->goHome();
     }
 }
