@@ -21,10 +21,8 @@ class AppAsset extends AssetBundle
     public $baseUrl = '@web';
     public $css = [
         'css/site.css',
-        'css/lang.css',
     ];
     public $js = [
-        'js/lang.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

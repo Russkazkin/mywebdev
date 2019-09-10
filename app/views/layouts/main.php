@@ -4,6 +4,7 @@
 
 /* @var $content string */
 
+use app\modules\lang\widgets\selector\LanguageSelectorWidget;
 use app\widgets\Alert;
 use yii\helpers\Html;
 use yii\bootstrap4\Nav;
@@ -61,7 +62,8 @@ GlyphiconAsset::register($this);
         'options' => ['class' => 'navbar-nav mr-auto'],
         'items' => $menuItems
     ]);
-    echo Html::beginForm(['/site/language'], 'post', [
+    echo LanguageSelectorWidget::widget();
+    /*echo Html::beginForm(['lang/select'], 'post', [
         'enctype' => 'multipart/form-data',
         'id' => 'lang-form',
         'class' => 'lang-switch-form'
@@ -69,10 +71,9 @@ GlyphiconAsset::register($this);
     echo Html::radioList('language',
         Yii::$app->language,
         ['en-US' => 'ENG', 'ru-RU' => 'РУС'],
-        ['class' => 'lang-switch']);
+        ['class' => 'lang-switch']);*/
     //echo Html::dropDownList('language', Yii::$app->language, ['en-US' => 'English', 'ru-RU' => 'Русский']);
     //echo Html::submitButton('Change');
-    echo Html::endForm();
     NavBar::end();
     ?>
 

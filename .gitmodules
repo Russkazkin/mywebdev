@@ -1,3 +1,6 @@
 [submodule "app/modules/auth"]
 	path = app/modules/auth
 	url = git@github.com:Russkazkin/yii2-auth-module.git
+[submodule "app/modules/lang"]
+	path = app/modules/lang
+	url = git@github.com:Russkazkin/yii2-lang-selector.git

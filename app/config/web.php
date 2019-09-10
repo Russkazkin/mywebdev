@@ -11,10 +11,7 @@ $config = [
     'basePath' => dirname(__DIR__),
     'bootstrap' => [
         'log',
-        [
-            'class' => LanguageSelector::class,
-            'supportedLanguages' => ['en-US', 'ru-RU'],
-        ]
+        'lang',
     ],
     'language' => 'ru-RU',
     'sourceLanguage' => 'en-US',
@@ -25,7 +22,10 @@ $config = [
     'modules' => [
         'auth' => [
             'class' => 'app\modules\auth\Module'
-        ]
+        ],
+        'lang' => [
+            'class' => 'app\modules\lang\Module'
+        ],
     ],
     'components' => [
         'request' => [
