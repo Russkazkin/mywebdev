@@ -62,18 +62,11 @@ GlyphiconAsset::register($this);
         'options' => ['class' => 'navbar-nav mr-auto'],
         'items' => $menuItems
     ]);
-    echo LanguageSelectorWidget::widget();
-    /*echo Html::beginForm(['lang/select'], 'post', [
-        'enctype' => 'multipart/form-data',
-        'id' => 'lang-form',
-        'class' => 'lang-switch-form'
-    ]);
-    echo Html::radioList('language',
-        Yii::$app->language,
-        ['en-US' => 'ENG', 'ru-RU' => 'РУС'],
-        ['class' => 'lang-switch']);*/
-    //echo Html::dropDownList('language', Yii::$app->language, ['en-US' => 'English', 'ru-RU' => 'Русский']);
-    //echo Html::submitButton('Change');
+    try {
+        echo LanguageSelectorWidget::widget();
+    } catch (Exception $e) {
+        echo $e->getMessage();
+    }
     NavBar::end();
     ?>
 
