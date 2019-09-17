@@ -2,6 +2,7 @@
 
 use app\components\LanguageSelector;
 use yii\i18n\PhpMessageSource;
+use yii\rbac\DbManager;
 
 $params = require __DIR__ . '/params.php';
 $db = file_exists(__DIR__ . '/db_local.php') ? (require __DIR__ . '/db_local.php') : (require __DIR__ . '/db.php');
@@ -28,6 +29,9 @@ $config = [
         ],
     ],
     'components' => [
+        'authManager' => [
+            'class' => DbManager::class,
+        ],
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => '98gIM9RdYciaPuV9urbTbKxCUOtCZRfH',
