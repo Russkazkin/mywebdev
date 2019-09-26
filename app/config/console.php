@@ -8,7 +8,10 @@ $db = file_exists(__DIR__ . '/db_local.php') ? (require __DIR__ . '/db_local.php
 $config = [
     'id' => 'basic-console',
     'basePath' => dirname(__DIR__),
-    'bootstrap' => ['log'],
+    'bootstrap' => [
+        'log',
+        'auth',
+    ],
     'controllerNamespace' => 'app\commands',
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
@@ -31,6 +34,11 @@ $config = [
             ],
         ],
         'db' => $db,
+    ],
+    'modules' => [
+        'auth' => [
+            'class' => '\app\modules\auth\Module',
+        ],
     ],
     'params' => $params,
 
