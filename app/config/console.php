@@ -39,6 +39,9 @@ $config = [
         'auth' => [
             'class' => '\app\modules\auth\Module',
         ],
+        'blog' => [
+            'class' => 'app\modules\blog\Module',
+        ],
     ],
     'params' => $params,
 
@@ -47,6 +50,11 @@ $config = [
             'class' => 'yii\console\controllers\MigrateController',
             'migrationNamespaces' => ['app\modules\auth\migrations'],
             'migrationTable' => 'migration_auth'
+        ],
+        'migrate-blog' => [
+            'class' => 'yii\console\controllers\MigrateController',
+            'migrationNamespaces' => ['app\modules\blog\migrations'],
+            'migrationTable' => 'migration_blog'
         ],
         'migrate-rbac' => [
             'class' => 'yii\console\controllers\MigrateController',

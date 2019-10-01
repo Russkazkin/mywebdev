@@ -4,3 +4,6 @@
 [submodule "app/modules/lang"]
 	path = app/modules/lang
 	url = git@github.com:Russkazkin/yii2-lang-selector.git
+[submodule "app/modules/blog"]
+	path = app/modules/blog
+	url = git@github.com:Russkazkin/yii2-blog-module.git

@@ -27,6 +27,9 @@ $config = [
         'lang' => [
             'class' => 'app\modules\lang\Module'
         ],
+        'blog' => [
+            'class' => 'app\modules\blog\Module',
+        ],
     ],
     'components' => [
         'authManager' => [
