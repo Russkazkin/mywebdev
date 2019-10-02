@@ -30,6 +30,9 @@ $config = [
         'blog' => [
             'class' => 'app\modules\blog\Module',
         ],
+        'admin' => [
+            'class' => 'app\modules\admin\Module',
+        ],
     ],
     'components' => [
         'authManager' => [

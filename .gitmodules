@@ -7,3 +7,6 @@
 [submodule "app/modules/blog"]
 	path = app/modules/blog
 	url = git@github.com:Russkazkin/yii2-blog-module.git
+[submodule "app/modules/admin"]
+	path = app/modules/admin
+	url = git@github.com:Russkazkin/yii2-admin-module.git
