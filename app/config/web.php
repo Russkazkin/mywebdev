@@ -76,8 +76,14 @@ $config = [
                     'fileMap' => [
                         'auth' => '/modules/auth/messages'
                     ]
-                ]
-            ]
+                ],
+                'blog*' => [
+                    'class' => PhpMessageSource::class,
+                    'fileMap' => [
+                        'blog' => '/modules/blog/messages'
+                    ]
+                ],
+            ],
         ],
         'db' => $db,
         'urlManager' => [
