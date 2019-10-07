@@ -14,5 +14,6 @@ return [
             'locale' => 'ru_RU.UTF-8, ru_RU',
             'calendar' => IntlDateFormatter::TRADITIONAL,
         ]
-    ]
+    ],
+    'bsVersion' => '4.x',
 ];
