@@ -9,10 +9,12 @@ return [
         'en-US' => [
             'locale' => 'en_US',
             'calendar' => '',
+            'dateFormat' => 'yyyy-mm-dd'
         ],
         'ru-RU' => [
             'locale' => 'ru_RU.UTF-8, ru_RU',
             'calendar' => IntlDateFormatter::TRADITIONAL,
+            'dateFormat' => 'dd-mm-yyyy'
         ]
     ],
     'bsVersion' => '4.x',
