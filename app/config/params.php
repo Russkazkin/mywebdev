@@ -8,13 +8,13 @@ return [
     'formattedLanguages' => [
         'en-US' => [
             'locale' => 'en_US',
-            'calendar' => '',
-            'dateFormat' => 'yyyy-mm-dd'
+            'calendar' => IntlDateFormatter::GREGORIAN,
+            'dateFormat' => 'php:m-d-Y'
         ],
         'ru-RU' => [
             'locale' => 'ru_RU.UTF-8, ru_RU',
-            'calendar' => IntlDateFormatter::TRADITIONAL,
-            'dateFormat' => 'dd-mm-yyyy'
+            'calendar' => IntlDateFormatter::GREGORIAN,
+            'dateFormat' => 'php:d-m-Y'
         ]
     ],
     'bsVersion' => '4.x',
