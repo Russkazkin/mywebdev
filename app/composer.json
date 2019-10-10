@@ -22,7 +22,8 @@
         "xtetis/yii2-bootstrap4-glyphicons": "*",
         "ext-intl": "*",
         "kartik-v/yii2-widget-datepicker": "dev-master",
-        "kartik-v/yii2-icons": "@dev"
+        "kartik-v/yii2-icons": "@dev",
+        "kartik-v/yii2-widget-fileinput": "@dev"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.1.0",
