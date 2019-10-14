@@ -146,9 +146,9 @@
             "authors": [
                 {
                     "name": "Carsten Brandt",
-                    "role": "Creator",
                     "email": "mail@cebe.cc",
-                    "homepage": "http://cebe.cc/"
+                    "homepage": "http://cebe.cc/",
+                    "role": "Creator"
                 }
             ],
             "description": "A super fast, highly extensible markdown parser for PHP",
@@ -2388,8 +2388,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "role": "lead",
-                    "email": "sebastian@phpunit.de"
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
                 }
             ],
             "description": "Simple template engine.",
@@ -3278,8 +3278,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "role": "lead",
-                    "email": "sebastian@phpunit.de"
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
                 }
             ],
             "description": "Library that helps with managing the version number of Git-hosted PHP projects",
