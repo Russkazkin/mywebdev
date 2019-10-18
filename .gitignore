@@ -3,3 +3,4 @@
 /vendor
 db_local.php
 /app/web/uploads/
+/app/web/blog_uploads/

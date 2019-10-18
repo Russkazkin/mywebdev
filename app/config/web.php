@@ -19,7 +19,7 @@ $config = [
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
-        '@uploads' => '@app/web/uploads/',
+        //'@uploads' => '@app/web/uploads/',
     ],
     'modules' => [
         'auth' => [
