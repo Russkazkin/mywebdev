@@ -48,6 +48,7 @@ GlyphiconAsset::register($this);
         $menuItems[] = ['label' => Yii::t('app', 'Sign In'), 'url' => ['/auth/sign-in']];
         $menuItems[] = ['label' => Yii::t('app', 'Sign Up'), 'url' => ['/auth/sign-up']];
     } else {
+        $menuItems[] = ['label' => Yii::t('app', 'Admin'), 'url' => ['/admin']];
         $menuItems[] = '<li>'
             . Html::beginForm(['/auth/logout'], 'post')
             . Html::submitButton(
