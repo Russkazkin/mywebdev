@@ -37,7 +37,7 @@ $config = [
     ],
     'components' => [
         'assetManager' => [
-            'appendTimestamp' => true,
+            'linkAssets' => true,
         ],
         'authManager' => [
             'class' => DbManager::class,
