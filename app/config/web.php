@@ -96,6 +96,7 @@ $config = [
             'rules' => [
                 'auth/<action>' => 'auth/auth/<action>',
                 'user/<action>' => 'auth/user/<action>',
+                'blog/<action>' => 'blog/blog/<action>',
             ],
         ],
     ],
