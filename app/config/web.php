@@ -26,7 +26,10 @@ $config = [
             'class' => 'app\modules\auth\Module'
         ],
         'lang' => [
-            'class' => 'app\modules\lang\Module'
+            'class' => 'app\modules\lang\Module',
+            'components' => [
+                'dateManager' => \app\modules\lang\components\LangDateComponent::class,
+            ]
         ],
         'blog' => [
             'class' => 'app\modules\blog\Module',
