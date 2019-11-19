@@ -1,6 +1,6 @@
 <?php
 
-use app\components\LanguageSelector;
+use app\modules\lang\components\LangDateComponent;
 use yii\i18n\PhpMessageSource;
 use yii\rbac\DbManager;
 
@@ -19,7 +19,6 @@ $config = [
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
-        //'@uploads' => '@app/web/uploads/',
     ],
     'modules' => [
         'auth' => [
@@ -28,7 +27,7 @@ $config = [
         'lang' => [
             'class' => 'app\modules\lang\Module',
             'components' => [
-                'dateManager' => \app\modules\lang\components\LangDateComponent::class,
+                'dateManager' => LangDateComponent::class,
             ]
         ],
         'blog' => [
