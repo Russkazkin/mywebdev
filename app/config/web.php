@@ -79,14 +79,16 @@ $config = [
             'translations' => [
                 'auth*' => [
                     'class' => PhpMessageSource::class,
+                    'basePath' => '@app/modules/auth/messages',
                     'fileMap' => [
-                        'auth' => '/modules/auth/messages'
+                        'auth' => 'auth.php'
                     ]
                 ],
                 'blog*' => [
                     'class' => PhpMessageSource::class,
+                    'basePath' => '@app/modules/auth/messages',
                     'fileMap' => [
-                        'blog' => '/modules/blog/messages'
+                        'blog' => 'blog.php'
                     ]
                 ],
             ],
