@@ -86,7 +86,7 @@ $config = [
                 ],
                 'blog*' => [
                     'class' => PhpMessageSource::class,
-                    'basePath' => '@app/modules/auth/messages',
+                    'basePath' => '@app/modules/blog/messages',
                     'fileMap' => [
                         'blog' => 'blog.php'
                     ]
