@@ -53,8 +53,8 @@ $config = [
         ],
         'user' => [
             'identityClass' => 'app\modules\auth\models\User',
-            //'identityClass' => 'app\models\User',
             'enableAutoLogin' => true,
+            'loginUrl' => ['auth/sign-in'],
         ],
         'errorHandler' => [
             'errorAction' => 'site/error',
