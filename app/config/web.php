@@ -1,5 +1,6 @@
 <?php
 
+use app\modules\auth\components\RbacComponent;
 use app\modules\lang\components\LangDateComponent;
 use yii\i18n\PhpMessageSource;
 use yii\rbac\DbManager;
@@ -22,7 +23,10 @@ $config = [
     ],
     'modules' => [
         'auth' => [
-            'class' => 'app\modules\auth\Module'
+            'class' => 'app\modules\auth\Module',
+            'components' => [
+                'rbac' => RbacComponent::class
+            ]
         ],
         'lang' => [
             'class' => 'app\modules\lang\Module',
