@@ -37,7 +37,9 @@ $config = [
         ],
         'blog' => [
             'class' => 'app\modules\blog\Module',
-            'components' => ArticleComponent::class,
+            'components' => [
+                'article' => ArticleComponent::class,
+            ]
         ],
         'admin' => [
             'class' => 'app\modules\admin\Module',
