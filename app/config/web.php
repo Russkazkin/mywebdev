@@ -1,6 +1,7 @@
 <?php
 
 use app\modules\auth\components\RbacComponent;
+use app\modules\blog\components\ArticleComponent;
 use app\modules\lang\components\LangDateComponent;
 use yii\i18n\PhpMessageSource;
 use yii\rbac\DbManager;
@@ -36,6 +37,7 @@ $config = [
         ],
         'blog' => [
             'class' => 'app\modules\blog\Module',
+            'components' => ArticleComponent::class,
         ],
         'admin' => [
             'class' => 'app\modules\admin\Module',
