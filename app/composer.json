@@ -25,7 +25,8 @@
         "kartik-v/yii2-icons": "@dev",
         "kartik-v/yii2-widget-fileinput": "@dev",
         "ext-json": "*",
-        "bower-asset/fontawesome": "~5.6.3"
+        "bower-asset/fontawesome": "~5.6.3",
+        "mihaildev/yii2-ckeditor": "*"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.1.0",
