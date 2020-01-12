@@ -27,7 +27,8 @@
         "ext-json": "*",
         "bower-asset/fontawesome": "~5.6.3",
         "mihaildev/yii2-ckeditor": "*",
-        "bizley/quill": "^2.3"
+        "bizley/quill": "^2.3",
+        "bower-asset/magnific-popup": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.1.0",

@@ -4,24 +4,24 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b775266aed297b46b4c42e736f653853",
+    "content-hash": "ffcd1cc07d937c2a2cc87de5c9fdfde4",
     "packages": [
         {
             "name": "bizley/quill",
-            "version": "2.4.0",
+            "version": "2.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bizley/yii2-quill.git",
-                "reference": "eccbab20f11ebca17c35fe19ddfdc885541e8bd2"
+                "reference": "2b923ba7630da309f796f8efd2cfa13c8f9d320e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bizley/yii2-quill/zipball/eccbab20f11ebca17c35fe19ddfdc885541e8bd2",
-                "reference": "eccbab20f11ebca17c35fe19ddfdc885541e8bd2",
+                "url": "https://api.github.com/repos/bizley/yii2-quill/zipball/2b923ba7630da309f796f8efd2cfa13c8f9d320e",
+                "reference": "2b923ba7630da309f796f8efd2cfa13c8f9d320e",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.0",
+                "php": "^7.0",
                 "yiisoft/yii2": ">=2.0.0 <2.1.0"
             },
             "require-dev": {
@@ -51,7 +51,7 @@
                 "wysiwyg",
                 "yii2"
             ],
-            "time": "2019-07-21T14:58:32+00:00"
+            "time": "2020-01-08T20:46:53+00:00"
         },
         {
             "name": "bower-asset/fontawesome",
@@ -129,6 +129,25 @@
             ]
         },
         {
+            "name": "bower-asset/magnific-popup",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:dimsemenov/Magnific-Popup.git",
+                "reference": "c8f6b8549ebff2306c5f1179c9d112308185fe2c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dimsemenov/Magnific-Popup/zipball/c8f6b8549ebff2306c5f1179c9d112308185fe2c",
+                "reference": "c8f6b8549ebff2306c5f1179c9d112308185fe2c"
+            },
+            "require": {
+                "bower-asset/jquery": ">=1.8.0"
+            },
+            "type": "bower-asset",
+            "time": "2017-06-05T08:11:48+00:00"
+        },
+        {
             "name": "bower-asset/punycode",
             "version": "v1.3.2",
             "source": {
@@ -148,7 +167,7 @@
             "version": "2.0.7.1",
             "source": {
                 "type": "git",
-                "url": "git@github.com:yiisoft/jquery-pjax.git",
+                "url": "https://github.com/yiisoft/jquery-pjax.git",
                 "reference": "aef7b953107264f00234902a3880eb50dafc48be"
             },
             "dist": {
@@ -326,16 +345,16 @@
         },
         {
             "name": "egulias/email-validator",
-            "version": "2.1.13",
+            "version": "2.1.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/egulias/EmailValidator.git",
-                "reference": "834593d5900615639208417760ba6a17299e2497"
+                "reference": "c4b8d12921999d8a561004371701dbc2e05b5ece"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/834593d5900615639208417760ba6a17299e2497",
-                "reference": "834593d5900615639208417760ba6a17299e2497",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/c4b8d12921999d8a561004371701dbc2e05b5ece",
+                "reference": "c4b8d12921999d8a561004371701dbc2e05b5ece",
                 "shasum": ""
             },
             "require": {
@@ -379,7 +398,7 @@
                 "validation",
                 "validator"
             ],
-            "time": "2019-12-30T08:14:25+00:00"
+            "time": "2020-01-05T14:11:20+00:00"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -2612,16 +2631,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "7.5.18",
+            "version": "7.5.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "fcf6c4bfafaadc07785528b06385cce88935474d"
+                "reference": "9467db479d1b0487c99733bb1e7944d32deded2c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/fcf6c4bfafaadc07785528b06385cce88935474d",
-                "reference": "fcf6c4bfafaadc07785528b06385cce88935474d",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/9467db479d1b0487c99733bb1e7944d32deded2c",
+                "reference": "9467db479d1b0487c99733bb1e7944d32deded2c",
                 "shasum": ""
             },
             "require": {
@@ -2692,7 +2711,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2019-12-06T05:14:37+00:00"
+            "time": "2020-01-08T08:45:45+00:00"
         },
         {
             "name": "psr/container",
@@ -4306,7 +4325,8 @@
     "stability-flags": {
         "kartik-v/yii2-widget-datepicker": 20,
         "kartik-v/yii2-icons": 20,
-        "kartik-v/yii2-widget-fileinput": 20
+        "kartik-v/yii2-widget-fileinput": 20,
+        "bower-asset/magnific-popup": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
