@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "bizley/quill",
-            "version": "2.5.0",
+            "version": "2.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bizley/yii2-quill.git",
-                "reference": "2b923ba7630da309f796f8efd2cfa13c8f9d320e"
+                "reference": "aae29b3d7c305b54de85ec3d2c0c66f919463f26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bizley/yii2-quill/zipball/2b923ba7630da309f796f8efd2cfa13c8f9d320e",
-                "reference": "2b923ba7630da309f796f8efd2cfa13c8f9d320e",
+                "url": "https://api.github.com/repos/bizley/yii2-quill/zipball/aae29b3d7c305b54de85ec3d2c0c66f919463f26",
+                "reference": "aae29b3d7c305b54de85ec3d2c0c66f919463f26",
                 "shasum": ""
             },
             "require": {
@@ -51,14 +51,14 @@
                 "wysiwyg",
                 "yii2"
             ],
-            "time": "2020-01-08T20:46:53+00:00"
+            "time": "2020-01-14T19:54:51+00:00"
         },
         {
             "name": "bower-asset/fontawesome",
             "version": "5.6.3",
             "source": {
                 "type": "git",
-                "url": "git@github.com:FortAwesome/Font-Awesome.git",
+                "url": "https://github.com/FortAwesome/Font-Awesome.git",
                 "reference": "34dff97269eb4d4142218af6a9dbc44024524ba2"
             },
             "dist": {
