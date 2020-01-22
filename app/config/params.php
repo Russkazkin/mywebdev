@@ -14,7 +14,7 @@ return [
         'ru-RU' => [
             'locale' => 'ru_RU.UTF-8, ru_RU',
             'calendar' => IntlDateFormatter::GREGORIAN,
-            'dateFormat' => 'php:d-m-Y'
+            'dateFormat' => 'php:d/m/Y'
         ]
     ],
     'bsVersion' => '4.x',
