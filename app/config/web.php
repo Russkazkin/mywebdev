@@ -102,6 +102,14 @@ $config = [
                         'blog' => 'blog.php'
                     ]
                 ],
+                'yii2mod.comments' => [
+                    'class' => PhpMessageSource::class,
+                    'basePath' => '@app/modules/blog/messages',
+                    'fileMap' => [
+                        'blog' => 'blog.php',
+                        'yii2mod.comments' => 'blog.php',
+                    ]
+                ]
             ],
         ],
         'db' => $db,
