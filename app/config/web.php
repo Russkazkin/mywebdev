@@ -44,6 +44,9 @@ $config = [
         'admin' => [
             'class' => 'app\modules\admin\Module',
         ],
+        'comment' => [
+            'class' => 'yii2mod\comments\Module',
+        ],
     ],
     'components' => [
         'assetManager' => [
