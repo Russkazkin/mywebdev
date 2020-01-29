@@ -2,6 +2,7 @@
 
 use app\modules\auth\components\RbacComponent;
 use app\modules\blog\components\ArticleComponent;
+use app\modules\blog\models\Comment;
 use app\modules\lang\components\LangDateComponent;
 use yii\i18n\PhpMessageSource;
 use yii\rbac\DbManager;
@@ -46,6 +47,7 @@ $config = [
         ],
         'comment' => [
             'class' => 'yii2mod\comments\Module',
+            'commentModelClass' => Comment::class,
         ],
     ],
     'components' => [
