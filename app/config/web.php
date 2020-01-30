@@ -2,6 +2,7 @@
 
 use app\modules\auth\components\RbacComponent;
 use app\modules\blog\components\ArticleComponent;
+use app\modules\blog\components\CategoryComponent;
 use app\modules\blog\models\Comment;
 use app\modules\lang\components\LangDateComponent;
 use yii\i18n\PhpMessageSource;
@@ -40,6 +41,7 @@ $config = [
             'class' => 'app\modules\blog\Module',
             'components' => [
                 'article' => ArticleComponent::class,
+                'category' => CategoryComponent::class,
             ]
         ],
         'admin' => [
