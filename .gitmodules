@@ -10,3 +10,6 @@
 [submodule "app/modules/admin"]
 	path = app/modules/admin
 	url = git@github.com:Russkazkin/yii2-admin-module.git
+[submodule "app/modules/yii2-comments"]
+	path = app/modules/yii2-comments
+	url = git@github.com:Russkazkin/yii2-comments.git
