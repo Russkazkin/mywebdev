@@ -50,6 +50,7 @@ $config = [
         'comment' => [
             'class' => 'yii2mod\comments\Module',
             'commentModelClass' => Comment::class,
+            'enableInlineEdit' => true,
         ],
     ],
     'components' => [
